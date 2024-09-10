@@ -1,5 +1,5 @@
 # Author: Manny Valenzuela
-# My first Python lab in my CIS129 course
+# My first Python lab
 # Prints a simple short story
 print("Candy Man, Candy Man, Candy Man")
 print("After repeating candy man three times in the mirror I thought nothing would happen but the opposite")
