@@ -35,3 +35,5 @@ print('---------')
 
 print('Total: $',total)
 print('***************************************\n\n***************************************')
+
+print('Thank you for choosing us we can't wait to see you again soon and as a token of our appreciation, here’s a special discount just for you to enjoy on your next visit!')
