@@ -1,0 +1,36 @@
+#Lab 5 The Bottle Return Program
+#Author: Manny Valenzuela
+#Date: 9/30/24
+#This program lets a grocery store track the total bottles collected over a week and calculates total payout
+
+#Variables
+total_bottles = 0
+counter = 1
+today_bottles = 0
+total_payout = 0
+keep_going = 'y'
+
+#This is the loop
+while keep_going.lower() == 'y':
+    #Reset total bottles and the counter for a new data
+    total_bottles = 0
+    counter = 1
+    
+    #Gets the bottles for the 7 days
+    while counter <= 7:
+        today_bottles = int(input(f"Enter number of bottles returned for day #{counter}: "))
+        total_bottles += today_bottles  #Updates the total bottles
+        counter += 1  #The counter
+    
+    #Calculates the total payout for the week
+    total_payout = total_bottles * 0.10  #The payout is 10 cents per bottle
+
+    #Prints the results
+    print(f"The total number of bottles collected is {total_bottles}")
+    print(f"The total paid out is $ {total_payout:.2f}") #Displays the payout
+
+    #Ask if the user wants to run the program again
+    print("Do you want to enter another week’s worth of data? (Enter y or n)")
+    keep_going = input().strip()
+
+print("Thank you for using the Bottle Return Program!")
